@@ -15,7 +15,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Get User Auth
-  const user = JSON.parse(localStorage.getItem("auth"));
+  const auth = JSON.parse(localStorage.getItem("auth"));
 
   // Logout
   const logout = () => {
@@ -46,7 +46,7 @@ const Navbar = () => {
             Home
           </Link>
 
-          {user && (
+          {auth && (
             <Link
               to="/order"
               className="hover:text-[#e09f3e] transition-colors duration-200"
@@ -54,7 +54,7 @@ const Navbar = () => {
               Orders
             </Link>
           )}
-          {user?.user?.email === "faizandeveloper@gmail.com" && (
+          {auth?.user?.email === "faizandeveloper@gmail.com" && (
             <Link
               to="/dashboard"
               className="hover:text-[#e09f3e] transition-colors duration-200"
@@ -62,7 +62,7 @@ const Navbar = () => {
               Admin
             </Link>
           )}
-          {user ? (
+          {auth ? (
             <Link
               to="/login"
               className="hover:text-[#e09f3e] transition-colors duration-200"
@@ -108,7 +108,7 @@ const Navbar = () => {
               Home
             </Link>
            
-            {user && (
+            {auth && (
               <Link
                 to="/order"
                 className="hover:text-[#e09f3e] transition-colors duration-200 w-full text-center"
@@ -117,7 +117,7 @@ const Navbar = () => {
                 Order
               </Link>
             )}
-            {user.user.email && (
+            {auth?.user?.email && (
               <Link
                 to="/dashboard"
                 className="hover:text-[#e09f3e] transition-colors duration-200 w-full text-center"
@@ -126,7 +126,7 @@ const Navbar = () => {
                 Admin
               </Link>
             )}
-            {user ? (
+            {auth ? (
               <Link
                 to="/login"
                 className="hover:text-[#e09f3e] transition-colors duration-200 w-full text-center"
