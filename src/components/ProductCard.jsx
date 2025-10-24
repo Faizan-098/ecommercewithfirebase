@@ -12,7 +12,7 @@ const ProductCard = () => {
     <>
       {productsData.length > 0 ? (
         <section className="py-12 px-6 bg-[#fff3b0]" id="products">
-          <h2 className="font-sans text-4xl lg:text-6xl font-bold  text-[#540b0e] mb-10 ">
+          <h2 className="font-sans text-2xl lg:text-6xl font-bold  text-[#540b0e] mb-10 ">
             <span className="border-b-4 border-[#540b0e]"> Our La</span>test
             Products
           </h2>
