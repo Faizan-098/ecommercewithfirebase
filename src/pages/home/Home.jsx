@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import Mycontext from "../../context/Mycontext";
 import HeroSection from "../../components/HeroSection";
 import Filter from "../../components/Filter";
-import ProductCard from "../../components/productCard";
+import ProductCard from "../../components/ProductCard";
 
 const Home = () => {
 
