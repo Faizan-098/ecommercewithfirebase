@@ -117,7 +117,7 @@ const Navbar = () => {
                 Order
               </Link>
             )}
-            {auth?.user?.email && (
+            {auth?.user?.email === "faizandeveloper@gmail.com"  && (
               <Link
                 to="/dashboard"
                 className="hover:text-[#e09f3e] transition-colors duration-200 w-full text-center"
