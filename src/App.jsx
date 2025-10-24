@@ -12,7 +12,8 @@ import ProductInfo from "./pages/productInfo/ProductInfo";
 import CreateProduct from "./pages/admin/pages/CreateProduct";
 import UpdateProduct from "./pages/admin/pages/UpdateProduct";
 import { ToastContainer } from "react-toastify";
-import ProtectedAdminRoute from "./ProtectRoutes/protectedAdminRoute";
+import ProtectedAdminRoute from "./ProtectRoutes/ProtectedAdminRoute";
+
 import ProtectedUserRoute from "./ProtectRoutes/ProtectedUserRoute";
 
 const App = () => {
