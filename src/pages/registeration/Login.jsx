@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
   // Context
   const { isLoading, setIsLoading , setAuth } = useContext(Mycontext);
-  const [buttonDisabled, setbuttonDisabled] = useState(false);
+
   // States
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
@@ -20,7 +20,7 @@ const Login = () => {
     if (!userEmail || !userPassword) {
       return toast.error("Please fill all fields!");
     }
-    setbuttonDisabled(true);
+  
     try {
       setIsLoading(true);
       // SignIn
@@ -87,7 +87,7 @@ const Login = () => {
 
         {/* Login Button */}
         <button
-          disabled={buttonDisabled}
+        
           type="submit"
           className="cursor-pointer w-full bg-[#e09f3e] text-[#540b0e] font-semibold py-3 rounded-lg hover:bg-[#540b0e] hover:text-[#fff3b0] transition-all duration-300 shadow-md"
         >
